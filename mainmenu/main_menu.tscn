@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://okh0wll8ur4b"]
+[gd_scene load_steps=6 format=3 uid="uid://okh0wll8ur4b"]
 
 [ext_resource type="Texture2D" uid="uid://dbdax5j0sh1xi" path="res://Assets/Images/HUD/TitleScreen/background.png" id="1_g0kct"]
 [ext_resource type="Script" path="res://mainmenu/main_menu.gd" id="1_mi5a2"]
 [ext_resource type="FontFile" uid="uid://cfawv4m7p2vo5" path="res://Assets/Fonts/Default.ttf" id="2_lv7r3"]
+[ext_resource type="AudioStream" uid="uid://dns8ht7vus0ax" path="res://Assets/Songs/Musics/TitleScreen1.mp3" id="4_rm11d"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_7gm6u"]
 
@@ -90,3 +91,7 @@ icon = SubResource("ViewportTexture_7gm6u")
 layout_mode = 2
 text = "Quitter"
 icon = SubResource("ViewportTexture_7gm6u")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_rm11d")
+autoplay = true
